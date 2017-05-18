@@ -1,0 +1,28 @@
+<div class="carcolor">
+
+    <div class="container">
+        <table class="table table-hover table-striped">
+            <thead class="text-primary">
+                <tr>
+                    <th></th>
+                    <th>shortDescription</th>
+                    <th>FullDescription</th>
+                    <th>price</th>
+                    <th>Img</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="car in controller.cars" class="success">
+
+                    <td>{{car.id}}</td>
+                    <td>{{car.shortDescription}}</td>
+                    <td>{{car.fullDescription}}</td>
+                    <td>{{car.price}}</td>
+                    <td><img ng-src="{{car.imageUrl}}" class="img-thumbnail" width="500" /></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

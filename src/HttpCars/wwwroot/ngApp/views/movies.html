@@ -1,0 +1,27 @@
+﻿<div class="carcolor">
+
+    <div class="container">
+        <table class="table table-hover table-striped">
+            <thead class="text-primary">
+                <tr>
+                    
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Director</th>
+                                  
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="movie in controller.movies" class="success">
+
+                    <td>{{movie.id}}</td>
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.director}}</td>
+                    
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,68 @@
+<html ng-app="HttpCars">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <title></title>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <base href="/" />
+    <link href="~/css/site.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image:url(../images/fastway.gif);
+            background-repeat:no-repeat; 
+            background-size:cover
+        }
+
+    </style>
+</head>
+
+<body >
+    
+    <div class="container" >
+        <div class="jumbotron" >
+            <h1 id="jumtext">GINO CRUSE AUTOWORLD & Movies</h1>
+            <p>We have the best selection in the world when it comes to fast cars and movies. </p>
+            <p><a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a></p>
+        </div>
+        <h1></h1>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="text-"><a class="navbar-brand" href="#">Gino Cruse AutoWorld & Movies</a></div>
+                </div>
+                <ul class="nav navbar-nav">
+                   
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/movies">Movies</a></li>
+                </ul>
+            </div>
+        </nav>
+        @*<div>
+          
+          <a href="/">Home</a> /
+           <a href="/about">About</a>/
+            <a href="/movies">Movies</a>
+
+        </div>*@
+        <hr />
+
+        <ui-view></ui-view>
+    </div>
+
+    <!-- Library Files -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- App Files-->
+    <script src="/ngapp/app.js"></script>
+    <script src="/ngapp/controllers/controllers.js"></script>
+    <script src="/ngapp/services/services.js"></script>
+    <script src="~/ngApp/controllers/movieController.js"></script>
+
+</body>
+</html>
